@@ -16,8 +16,8 @@ class LoginActivity : AppCompatActivity() {
 
         //Need to check if the user is logged in already
         // if logged in then take them to MainActivity
-        if( ParseUser.getCurrentUser()!= null){
-           gotoMainActivity()
+       if( ParseUser.getCurrentUser()!= null){
+          gotoMainActivity()
        }
 
         findViewById<Button>(R.id.login_button).setOnClickListener{
