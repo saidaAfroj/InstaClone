@@ -15,10 +15,10 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         //Need to check if the user is logged in already
-        // if logged in then take them to MainActivity
-       if( ParseUser.getCurrentUser()!= null){
-          gotoMainActivity()
-       }
+         //if logged in then take them to MainActivity
+      if( ParseUser.getCurrentUser()!= null){
+          gotoMainActivity()}
+
 
         findViewById<Button>(R.id.login_button).setOnClickListener{
             var username = findViewById<EditText>(R.id.et_username).text.toString()

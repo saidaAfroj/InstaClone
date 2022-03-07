@@ -35,6 +35,12 @@ class Post : ParseObject(){
     fun setUser(user : ParseUser){
         put(KEY_USER,user)
     }
+    fun geturl():ParseUser?{
+        return getParseUser(KEY_IMAGE)
+    }
+    fun seturl(user : ParseUser){
+        put(KEY_IMAGE,user)
+    }
 
     companion object {
         const val KEY_Description = "description"
